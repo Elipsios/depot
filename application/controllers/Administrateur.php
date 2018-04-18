@@ -41,8 +41,8 @@ class Administrateur extends CI_Controller
         $donneesAInserer = array(
           'cTitre' => $this->input->post('txtTitre'),
           'cTexte' => $this->input->post('txtTexte'),
-          'cNomFichierImage' => $this->input->post('txtNomFichierImage')
-          ); // cTitre, cTexte, cNomFichierImage : champs de la table tabarticle
+          'NomImage' => $this->input->post('txtNomFichierImage')
+          ); // cTitre, cTexte, NOMIMAGE : champs de la table tabarticle
           $this->ModeleArticle->insererUnArticle($donneesAInserer); // appel du modèle
           $this->load->helper('url'); // helper chargé pour utilisation de site_url (dans la vue)
           $this->load->view('administrateur/insertionReussie');
