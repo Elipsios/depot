@@ -28,7 +28,7 @@ class Visiteur extends CI_Controller {
        show_404();
      }
 
-      $DonneesInjectees['TitreDeLaPage'] = $DonneesInjectees['unArticle']['cTitre'];
+      $DonneesInjectees['TitreDeLaPage'] = $DonneesInjectees['unArticle']['LIBELLE'];
       // ci-dessus, entrée ['cTitre'] de l'entrée ['unArticle'] de $DonneesInjectees
 
       $this->load->view('templates/Entete');

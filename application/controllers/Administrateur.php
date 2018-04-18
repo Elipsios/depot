@@ -39,9 +39,9 @@ class Administrateur extends CI_Controller
       else
       {
         $donneesAInserer = array(
-          'cTitre' => $this->input->post('txtTitre'),
-          'cTexte' => $this->input->post('txtTexte'),
-          'NomImage' => $this->input->post('txtNomFichierImage')
+          'LIBELLE' => $this->input->post('txtTitre'),
+          'DETAIL' => $this->input->post('txtTexte'),
+          'NOMINAGE' => $this->input->post('txtNomFichierImage')
           ); // cTitre, cTexte, NOMIMAGE : champs de la table tabarticle
           $this->ModeleArticle->insererUnArticle($donneesAInserer); // appel du modèle
           $this->load->helper('url'); // helper chargé pour utilisation de site_url (dans la vue)
